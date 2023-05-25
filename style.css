@@ -1,0 +1,110 @@
+
+*{
+    margin:0 ;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    }
+    a {
+     text-decoration: none;   
+    }
+    
+    .top{
+        height: 1024px;
+        background-image: url(img/fon.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #FFFFFF;
+    }
+    
+    .title { 
+        padding-top:217px ;
+        width: 788.78px;
+        height: 125.01px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .top_text {
+        padding-top: 32px;
+        width: 481px;
+        height: 64px;  
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        align-items: center;
+        color: #FFFFFF; 
+      }
+
+    .text2 {
+        font-weight: bold;
+    }
+    .center {
+        padding-left: 120px;   
+
+    }
+    .header_link {
+        margin-top: 44px;
+        width: 234.06px;
+        height: 48.6px;  
+    }  
+    .link {
+        padding-top: 13px;
+        padding-bottom: 13px;
+       padding-left: 74px;
+       padding-right: 74px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        border-radius: 30px; 
+        background: #9C0332;
+    } 
+    .game {
+        width: 1440px;
+        height: 556px; 
+        background: #000915; 
+       
+        }
+    .game_foto {
+        width: 379px;
+        height: 300px;
+        border-radius: 18px; 
+
+    }
+    .game_foto :hover {
+     border: blue;   
+
+    }
+
+
+    .game_text {
+    position: absolute;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+      }
+    .game_content{
+        display: flex;
+        gap: 32px;
+    }
+     
+   
+    
+
+   
+    
