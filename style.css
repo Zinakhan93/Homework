@@ -82,14 +82,13 @@ body {
         border-radius: 18px; 
 
     }
-    .game_foto :hover {
-     border: blue;   
+    .game_foto:hover {
+     border: 1px blue solid; 
 
     }
 
 
     .game_text {
-    position: absolute;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -97,13 +96,28 @@ body {
     display: flex;
     align-items: center;
     color: #FFFFFF;
-      }
+    position: absolute;
+    top: 236px;
+    left: 32px;
+    right: 263px;
+    bottom: 32px;
+      
+}
     .game_content{
         display: flex;
         gap: 32px;
     }
-     
-   
+     .game_one{
+        position: relative;
+
+     }
+     .game_two{
+        position:relative;
+
+     }
+      .game_thee {
+    position: relative;
+   }
     
 
    
