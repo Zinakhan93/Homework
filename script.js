@@ -5,7 +5,7 @@ alert (a);
 
 
 let iphon = "09 января 2007"
-alert ( iphon);
+alert ( iphon) ;
 
 
 let name = "Брендан Эйх "  
