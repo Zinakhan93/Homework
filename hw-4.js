@@ -1,35 +1,35 @@
 // Задание 1
-const hi = 'привет';
+const ha = 'привет';
 for (i = 1; i <= 2; i++) {
-    console.log(`${hi}`)
+    console.log(`${ha}`)
 }
 
-/*const hi = 'привет';
+const hi = 'привет';
 let i = 0;
 while (i < 2) {
     console.log(`${hi}`);
     i++;
-}*/
+}
 
 // Задание 2
-/*let a = 1;
-while (a <= 5) {
-    console.log(a);
-    a++;
-}*/
+let c = 1;
+while (c <= 5) {
+    console.log(c);
+    c++;
+}
 for (i = 1; i <= 5; i++) {
     console.log(`${i}`)
 
 }
 
 // задание 3
-/*let a = 7;
+let a = 7;
 while (a <= 22) {
     console.log(a);
     a++;
-}*/
-for (i = 7; i <= 22; i++) {
-    console.log(`${i}`)
+}
+for (let b = 7; b <= 22; b++) {
+    console.log(`${b}`)
 }
 
 
@@ -54,6 +54,18 @@ do {
 
 console.log(`Результат: ${n}`);
 console.log(`Количество итераций: ${num}`);
+
+let d = 1000;
+let bam = 0;
+while (d >= 50) {
+    d = d / 2;
+    bam++;
+    console.log(`Результат: ${d}`);
+    console.log(`Количество итераций: ${bam}`);
+
+
+}
+
 
 // задание 6
 let fridayDate = 5;
