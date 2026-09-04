@@ -75,7 +75,7 @@ console.log(reversed);
 
 // Задание 9
 const array7 = [[1, 2, 3], [4, 5, 6]];
-const array8 = array7.spread
+const array8 = array7[0].concat(array7[1]);
 console.log(array8);
 
 // const array7 = [[1, 2, 3], [4, 5, 6]];
@@ -112,7 +112,7 @@ function getNegativeNumbers(arr) {
     return arr.filter(num => num < 0);
 }
 
-const array11 = [5, -3, 10, -8, 0, -2, 7, -1];
+const array11 = [8, -6, 10, -2, 7, -5, 3, -16];
 const negatives = getNegativeNumbers(array11);
 console.log(negatives);
 
