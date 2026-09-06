@@ -49,6 +49,14 @@ const array4 = [1, 1, 1];
 array4.push(2, 2, 2);
 console.log(array4);
 
+// Другой вариант записи через цикл задачи 5
+let arr = [1, 1, 1];
+for (let i = 0; i < 3; i++) {
+    arr.push(2);
+}
+
+
+
 // Задание 6
 const array5 = [9, 8, 7, `a`, 6, 5];
 array5.sort();
