@@ -3,30 +3,32 @@ const getMin = (a, b) => a < b ? a : b;
 // Задание 2
 function nam(a) {
     if (a % 2 == 0) {
-        console.log(`Число четное`)
+        return `Число четное`
     } else {
-        console.log(`Число нечетное`)
+        return `Число нечетное`
     }
 }
+let num = a => {
+    return a % 2 === 0 ? 'Число четное' : 'Число нечетное';
+};
+// const oddOrEven2 = n => `Число ${n % 2 ? 'не' : ''}четное`;
+// const result2 = oddOrEven2(); 
+// console.log(result2);
 
-let num = a => a % 2 == 0 ? console.log(`Число четное`) : console.log(`Число нечетное`);
-
-const oddOrEven = n => console.log(`Число ${n % 2 ? 'не' : ''}четное`);
 // Задание 3
 const bi = (a) => console.log(a * a);
 const m = (t) => t ** 2;
 
 // Задание 4
 function getAge() {
-    const age = parseInt(prompt('Сколько вам лет?'))
+    const age = parseInt(prompt('Сколько вам лет?'));
+
     if (age <= 0) {
-        alert('Вы ввели неправильное значение')
-    } else if (age >= 0 || age <= 12) {
-        alert('Привет, друг!')
-
+        alert('Вы ввели неправильное значение');
+    } else if (age >= 0 && age <= 12) {
+        alert('Привет, друг!');
     } else {
-        alert('Добро пожаловать!')
-
+        alert('Добро пожаловать!');
     }
 }
 // Задание 5
@@ -34,16 +36,16 @@ function getNum(a, b) {
     a = Number(a);
     b = Number(b);
     if (isNaN(a) || isNaN(b)) {
-        return console.log('Одно или оба значения не являются числом');
+        return ('Одно или оба значения не являются числом');
     } else {
-        return a + b;
-    }
+        return a * b;
+    } Ы
 }
 // Задание  6
 function numberСheck() {
     const z = prompt(`Введите число`);
     if (isNaN(z)) {
-        return `Переданный параметр не является числом`;
+        return `Переданный параметр не является числом`; s
     } else {
         return `${z} в кубе равняется ${z ** 3}`;
     }
