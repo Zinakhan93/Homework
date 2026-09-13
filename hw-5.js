@@ -18,6 +18,7 @@ let num = a => {
 // Задание 3
 const bi = (a) => console.log(a * a);
 const m = (t) => t ** 2;
+// console.log(m(3) + 1);
 
 // Задание 4
 function getAge() {
