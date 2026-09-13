@@ -24,7 +24,7 @@ const m = (t) => t ** 2;
 function getAge() {
     const age = parseInt(prompt('Сколько вам лет?'));
 
-    if (age <= 0) {
+    if (age < 0) {
         alert('Вы ввели неправильное значение');
     } else if (age >= 0 && age <= 12) {
         alert('Привет, друг!');
@@ -40,7 +40,7 @@ function getNum(a, b) {
         return ('Одно или оба значения не являются числом');
     } else {
         return a * b;
-    } Ы
+    }
 }
 // Задание  6
 function numberСheck() {
@@ -49,7 +49,11 @@ function numberСheck() {
         return `Переданный параметр не является числом`; s
     } else {
         return `${z} в кубе равняется ${z ** 3}`;
+
     }
+}
+for (let i = 0; i <= 10; i++) {
+    alert(numberCheck()); // каждый раз вводим число вручную
 }
 // Задание 7 
 const circle1 = {
@@ -75,17 +79,21 @@ const circle2 = {
 }
 // Задание 8
 function getSeason(month) {
-    if (month < 1 || month > 12) {
-        return 'Некорректный номер месяца. Введите число от 1 до 12.';
-    }
-    if (month === 12 || month === 1 || month === 2) {
+    month = Number(month);
+
+    if (isNaN(month) || !Number.isInteger(month) || month < 1 || month > 12) {
+        return 'Недопустимое значение';
+    } else if (month === 12 || month === 1 || month === 2) {
         return 'Зима';
     } else if (month >= 3 && month <= 5) {
         return 'Весна';
     } else if (month >= 6 && month <= 8) {
         return 'Лето';
-    } else if (month >= 9 && month <= 11) {
+    } else {
         return 'Осень';
     }
+}
+for (let i = 0; i <= 13; i++) {
+    console.log(`${i} — ${getSeason(i)}`);
 }
 
