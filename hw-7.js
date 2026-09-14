@@ -112,3 +112,12 @@ function formatDate(date) {
 
 console.log(formatDate(new Date()));
 
+// Задание 11
+const fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+const shuffledFruits = fruits.sort(() => Math.random() - 0.5);
+alert(`Запомните фрукты: ${shuffledFruits.join(', ')}`);
+const first = prompt('Назовите первый фрукт');
+const last = prompt('Назовите последний фрукт');
+const correctAnswers = +(first.toLowerCase() === shuffledFruits[0].toLowerCase())
+    + +(last.toLowerCase() === shuffledFruits[shuffledFruits.length - 1].toLowerCase());
+alert(`${correctAnswers > 1 ? 'Вы победили!' : correctAnswers > 0 ? 'Так близко!' : 'Не угадали. Сыграем еще?'}`);
