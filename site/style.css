@@ -144,8 +144,11 @@
 
   }
 
-  .contentGame1 {
+  .content_game_1 {
       height: 1024px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
       background-image: url(img/фон_игры1.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -154,16 +157,12 @@
 
   }
 
-
-  .qwe {
-      display: flex;
-      justify-content: space-around;
-
+  .container {
+      width: 584px;
   }
 
   .title2 {
       padding-top: 32px;
-      width: 700px;
       font-style: normal;
       font-weight: 300;
       font-size: 48px;
@@ -175,7 +174,6 @@
   .text3 {
       display: flex;
       padding-top: 32px;
-      width: 300px;
       font-style: normal;
       font-weight: 300;
       font-size: 18px;
