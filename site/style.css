@@ -217,7 +217,7 @@
       .content_game_2 {
           display: flex;
           flex-wrap: wrap;
-          /* flex-direction: column-reverse; */
+          flex-direction: column-reverse;
       }
 
       .game_center {
@@ -233,6 +233,10 @@
       }
 
       .img {
+          width: 344px;
+      }
+
+      .container {
           width: 344px;
       }
   }
