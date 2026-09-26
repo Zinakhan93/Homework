@@ -42,24 +42,7 @@
       color: #FFFFFF;
   }
 
-  @media (max-width: 600px) {
-      .top_center {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 0;
-      }
 
-      .title {
-          font-size: 30px;
-          line-height: 30px;
-          text-align: center;
-      }
-
-      .top_text {
-          width: 350px;
-      }
-  }
 
   .text_2 {
       font-weight: bold;
@@ -108,19 +91,7 @@
   }
 
 
-  @media (max-width: 600px) {
-      .game_center {
-          height: 1221px;
-      }
 
-      .game_content {
-          flex-direction: column;
-      }
-
-      .game {
-          max-width: 343px;
-      }
-  }
 
 
   .game_foto {
@@ -150,6 +121,7 @@
       height: 1024px;
       padding: 0 150px;
       display: flex;
+      flex: 1;
       align-items: center;
       justify-content: space-between;
       background-image: url(img/фон_игры1.png);
@@ -162,6 +134,10 @@
   }
 
   .container {
+      width: 584px;
+  }
+
+  .img {
       width: 584px;
   }
 
@@ -190,6 +166,7 @@
       height: 1024px;
       padding: 0 150px;
       display: flex;
+      flex: 1;
       align-items: center;
       justify-content: space-between;
       background-image: url(img/фон_игры2\ \(1\).jpg);
@@ -199,4 +176,63 @@
       color: #000915;
       gap: 32px;
 
+  }
+
+  @media (max-width: 600px) {
+      body {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .top_center {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+      }
+
+      .title {
+          font-size: 30px;
+          line-height: 30px;
+          text-align: center;
+      }
+
+      .title2 {
+          flex-wrap: nowrap;
+          text-align: center;
+
+      }
+
+      .top_text {
+          width: 350px;
+      }
+
+      .content_game_1 {
+          display: flex;
+          flex-wrap: wrap;
+
+      }
+
+      .content_game_2 {
+          display: flex;
+          flex-wrap: wrap;
+          /* flex-direction: column-reverse; */
+      }
+
+      .game_center {
+          height: 1221px;
+      }
+
+      .game_content {
+          flex-direction: column;
+      }
+
+      .game {
+          max-width: 343px;
+      }
+
+      .img {
+          width: 344px;
+      }
   }
