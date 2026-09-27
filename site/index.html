@@ -31,7 +31,7 @@
                 </a>
             </div>
             <div class="game">
-                <a href="#">
+                <a href="#game2">
                     <img class="game_foto" src="img/игра 2.jpg" alt="игра 2" />
                     <h3 class="game_text">Игра 2</h3>
                 </a>
@@ -52,7 +52,9 @@
                 времени
                 года он
                 относится</p>
-            <div class="header_link"> <a class="link" href="#game-center">Играть!</a></div>
+            <div class="header_link"> <a onclick="game1()" class="link" href="#game-center">Играть!</a>
+
+            </div>
         </div>
         <img class="img" src="img/undraw_video_game_night_8h8m 1.png" alt="картинка">
 
@@ -65,10 +67,31 @@
             <p class="text3">При нажатии на кнопку играть, вы увидите несколько слов,
                 которые вам необходимо запомнить.
             </p>
-            <div class="header_link"> <a class="link" href="#game-center">Играть!</a></div>
+            <div class="header_link"> <a onclick="game2()" class="link" id="game2">Играть!</a></div>
         </div>
 
     </section>
+    <script>
+        function game1() {
+
+        }
+
+
+        function game2() {
+            const fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+            const shuffledFruits = fruits.sort(() => Math.random() - 0.5);
+            alert(`Запомните фрукты: ${shuffledFruits.join(', ')}`);
+            const first = prompt('Назовите первый фрукт');
+            const last = prompt('Назовите последний фрукт');
+            const correctAnswers = +(first.toLowerCase() === shuffledFruits[0].toLowerCase())
+                + +(last.toLowerCase() === shuffledFruits[shuffledFruits.length - 1].toLowerCase());
+            alert(`${correctAnswers > 1 ? 'Вы победили!' : correctAnswers > 0 ? 'Так близко!' : 'Не угадали. Сыграем еще?'}`);
+        }
+
+
+    </script>
+
 </body>
+
 
 </html>
