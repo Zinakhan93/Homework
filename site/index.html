@@ -25,7 +25,7 @@
     <section id="game-center" class="game_center">
         <div class="game_content">
             <div class="game">
-                <a href="#">
+                <a href="#game1">
                     <img class="game_foto" src="img/игра 1.jpg" alt="игра 1" />
                     <h3 class="game_text">Игра 1</h3>
                 </a>
@@ -37,7 +37,7 @@
                 </a>
             </div>
             <div class="game">
-                <a href="#">
+                <a href="#game3">
                     <img class="game_foto" src="img/игра 3.jpg" alt="игра 3" />
                     <h3 class="game_text">Игра 3</h3>
                 </a>
@@ -45,21 +45,21 @@
             </div>
         </div>
     </section>
-    <section class="content_game_1">
+    <section class="content_game_1" id="game1">
         <div class="container">
             <h2 class="title2">Времена года</h2>
             <p class="text3">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
                 времени
                 года он
                 относится</p>
-            <div class="header_link"> <button onclick="game1()" class="link" href="#game-center">Играть!</button>
+            <div class="header_link"> <button onclick="game1()" class="link">Играть!</button>
 
             </div>
         </div>
         <img class="img" src="img/undraw_video_game_night_8h8m 1.png" alt="картинка">
 
     </section>
-    <section class="content_game_2">
+    <section class="content_game_2" id="game2">
         <img class="img" src="img/игра2.png" alt="картинка">
 
         <div class="container">
@@ -67,18 +67,18 @@
             <p class="text3">При нажатии на кнопку играть, вы увидите несколько слов,
                 которые вам необходимо запомнить.
             </p>
-            <div class="header_link"> <button onclick="game2()" class="link" id="game2">Играть!</button></div>
+            <div class="header_link"> <button onclick="game2()" class="link"> Играть!</button></div>
         </div>
 
     </section>
-    <Section class="content_game_3">
+    <Section class="content_game_3" id="game3">
         <div class="container1">
             <h2 class="title2">Игра в загадки</h2>
             <p class="text3"> Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный
                 ответ, то
                 компьютер даст вам подсказку. У вас будет три попытки и две подсказки.
             </p>
-            <div class="header_link_unique"> <button onclick="game3()" class="link" id="game2">Играть!</button></div>
+            <div class="header_link_unique"> <button onclick="game3()" class="link">Играть!</button></div>
         </div>
 
     </Section>
@@ -97,6 +97,36 @@
             const correctAnswers = +(first.toLowerCase() === shuffledFruits[0].toLowerCase())
                 + +(last.toLowerCase() === shuffledFruits[shuffledFruits.length - 1].toLowerCase());
             alert(`${correctAnswers > 1 ? 'Вы победили!' : correctAnswers > 0 ? 'Так близко!' : 'Не угадали. Сыграем еще?'}`);
+        }
+
+
+        function game3() {
+            const correctAnswer = "марка";
+
+            const riddle = "Что может путешествовать по свету, оставаясь в одном и том же углу?";
+            function normalize(answer) {
+                return answer ? answer.trim().toLowerCase() : "";
+            }
+
+            let answer1 = prompt(riddle);
+
+            if (normalize(answer1) === correctAnswer) {
+                alert("Поздравляем! Вы угадали! Правильный ответ — марка. ");
+            } else {
+                let answer2 = prompt("Неверно. Подсказка: Это что-то маленькое, что можно наклеить.");
+
+                if (normalize(answer2) === correctAnswer) {
+                    alert("Поздравляем! Вы угадали! Правильный ответ — марка. ");
+                } else {
+                    let answer3 = prompt("Неверно. Подсказка: Это используется для отправки писем.");
+
+                    if (normalize(answer3) === correctAnswer) {
+                        alert("Поздравляем! Вы угадали! Правильный ответ — марка. ");
+                    } else {
+                        alert("К сожалению, вы проиграли. Правильный ответ — марка.");
+                    }
+                }
+            }
         }
 
 
